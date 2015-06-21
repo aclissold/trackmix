@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "Track.h"
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -16,7 +18,8 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    Track *aTrack = [[Track alloc] init];
+    self.track = aTrack;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
