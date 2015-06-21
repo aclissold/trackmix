@@ -684,6 +684,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <action selector="takeFloatValueForVolumeFrom:" target="Voe-Tx-rLC" id="ADM-Ys-laa"/>
+                        </connections>
                     </textField>
                     <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-JN-Ovb">
                         <rect key="frame" x="87" y="48" width="20" height="264"/>
@@ -691,12 +694,18 @@
                             <constraint firstAttribute="height" constant="259" id="QjG-7K-ClF"/>
                         </constraints>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="right" sliderType="linear" id="638-ll-Em0"/>
+                        <connections>
+                            <action selector="takeFloatValueForVolumeFrom:" target="Voe-Tx-rLC" id="Gf3-kk-Nev"/>
+                        </connections>
                     </slider>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eLt-qC-RwW">
                         <rect key="frame" x="61" y="13" width="72" height="32"/>
                         <buttonCell key="cell" type="push" title="Mute" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Txa-DV-nS3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <connections>
+                                <action selector="mute:" target="Voe-Tx-rLC" id="TG1-wh-Rq3"/>
+                            </connections>
                         </buttonCell>
                     </button>
                 </subviews>
