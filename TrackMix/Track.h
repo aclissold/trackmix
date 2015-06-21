@@ -10,4 +10,6 @@
 
 @interface Track : NSObject
 
+@property (assign) float volume;
+
 @end
