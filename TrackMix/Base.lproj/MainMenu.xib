@@ -674,26 +674,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="194" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMS-hP-HQE">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FMS-hP-HQE">
                         <rect key="frame" x="49" y="318" width="96" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="qT7-tD-gZX">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="f7Y-lg-MQq"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="5" drawsBackground="YES" id="qT7-tD-gZX">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-JN-Ovb">
-                        <rect key="frame" x="87" y="48" width="21" height="264"/>
-                        <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="638-ll-Em0"/>
+                    <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-JN-Ovb">
+                        <rect key="frame" x="87" y="48" width="20" height="264"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="259" id="QjG-7K-ClF"/>
+                        </constraints>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="right" sliderType="linear" id="638-ll-Em0"/>
                     </slider>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLt-qC-RwW">
-                        <rect key="frame" x="56" y="13" width="82" height="32"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Txa-DV-nS3">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eLt-qC-RwW">
+                        <rect key="frame" x="61" y="13" width="72" height="32"/>
+                        <buttonCell key="cell" type="push" title="Mute" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Txa-DV-nS3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="zKe-JN-Ovb" firstAttribute="top" secondItem="FMS-hP-HQE" secondAttribute="bottom" constant="8" id="D51-yx-lyT"/>
+                    <constraint firstItem="FMS-hP-HQE" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="Fb6-pC-S9s"/>
+                    <constraint firstItem="eLt-qC-RwW" firstAttribute="centerX" secondItem="FMS-hP-HQE" secondAttribute="centerX" id="GFU-iu-lBx"/>
+                    <constraint firstItem="eLt-qC-RwW" firstAttribute="top" secondItem="zKe-JN-Ovb" secondAttribute="bottom" constant="10" id="M4o-eu-xMo"/>
+                    <constraint firstItem="FMS-hP-HQE" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="49" id="N66-4s-Xrq"/>
+                    <constraint firstAttribute="trailing" secondItem="FMS-hP-HQE" secondAttribute="trailing" constant="49" id="ReV-Sk-4dn"/>
+                    <constraint firstItem="zKe-JN-Ovb" firstAttribute="centerX" secondItem="FMS-hP-HQE" secondAttribute="centerX" id="eY1-cQ-iTE"/>
+                    <constraint firstAttribute="bottom" secondItem="eLt-qC-RwW" secondAttribute="bottom" constant="20" id="vEP-jm-2Hx"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="182" y="286"/>
         </window>
