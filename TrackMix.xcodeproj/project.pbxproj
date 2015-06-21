@@ -12,6 +12,7 @@
 		B59F11F91B36FFAB009F480E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59F11F81B36FFAB009F480E /* Images.xcassets */; };
 		B59F11FC1B36FFAB009F480E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59F11FA1B36FFAB009F480E /* MainMenu.xib */; };
 		B59F12081B36FFAB009F480E /* TrackMixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59F12071B36FFAB009F480E /* TrackMixTests.m */; };
+		B59F12131B3707C7009F480E /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = B59F12121B3707C7009F480E /* Track.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		B59F12011B36FFAB009F480E /* TrackMixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackMixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59F12061B36FFAB009F480E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59F12071B36FFAB009F480E /* TrackMixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackMixTests.m; sourceTree = "<group>"; };
+		B59F12111B3707C7009F480E /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		B59F12121B3707C7009F480E /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				B59F11F41B36FFAB009F480E /* AppDelegate.m */,
 				B59F11F81B36FFAB009F480E /* Images.xcassets */,
 				B59F11FA1B36FFAB009F480E /* MainMenu.xib */,
+				B59F12111B3707C7009F480E /* Track.h */,
+				B59F12121B3707C7009F480E /* Track.m */,
 				B59F11F11B36FFAB009F480E /* Supporting Files */,
 			);
 			path = TrackMix;
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59F12131B3707C7009F480E /* Track.m in Sources */,
 				B59F11F71B36FFAB009F480E /* main.m in Sources */,
 				B59F11F51B36FFAB009F480E /* AppDelegate.m in Sources */,
 			);
